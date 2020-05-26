@@ -136,6 +136,7 @@ def main():
                     API_RESPONSE = submit_api_data(api_headers, api_data)
                     print('Token Generated for site ' + SITE_URL + ': ' + token)
                     print(str(row) + ' => ' + API_RESPONSE)
+                    write_error_log(str(row) + ' => ' + API_RESPONSE)
                 time.sleep(5)
 
 
